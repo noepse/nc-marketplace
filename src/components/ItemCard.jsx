@@ -1,4 +1,5 @@
-export default function ItemCard () {
-    return <p>Item Card</p>
+export default function ItemCard (props) {
+    const {item} = props
+    return <li>{item.item_name}</li>
 
 }

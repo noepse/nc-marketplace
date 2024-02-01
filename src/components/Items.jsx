@@ -1,9 +1,13 @@
 import ItemCard from "./ItemCard";
 
-export default function Items() {
+export default function Items(props) {
+const {items} = props
   return (  
   <>
     <p>These are the items</p>
-    <ItemCard />
+    <ul>{items.map((item)=>{
+      return <ItemCard key = {item.item_id} item = {item}/>
+    })}
+      </ul>
   </>)
 }
