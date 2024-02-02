@@ -1,6 +1,6 @@
-import Categories from "./components/Categories"
-import Items from "./components/Items"
-import Home from "./components/Home"
+import Categories from "./pages/Categories"
+import Items from "./pages/Items"
+import Home from "./pages/Home"
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 

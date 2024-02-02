@@ -1,4 +1,4 @@
-import CategoryCard from "./CategoryCard";
+import CategoryCard from "../components/CategoryCard";
 import axios from 'axios';
 import {useEffect, useState} from 'react';
 

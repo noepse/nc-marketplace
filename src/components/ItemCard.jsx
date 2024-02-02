@@ -5,15 +5,14 @@ export default function ItemCard (props) {
     const {item} = props
     console.log(item)
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem', padding: '0px '}}>
           <Card.Img variant="top" src={item.img_url} />
           <Card.Body>
             <Card.Title>{item.item_name}</Card.Title>
             <Card.Text>
-              {item.description}
-              {item.price}
+              £{item.price}
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Button variant="primary">More information</Button>
           </Card.Body>
         </Card>
       );
