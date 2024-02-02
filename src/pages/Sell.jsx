@@ -28,10 +28,16 @@ export default function Sell(){
         <Form.Control aria-label="Amount (to the nearest dollar)" />
         <InputGroup.Text>.00</InputGroup.Text>
       </InputGroup>
-      <Form.Label>Upload an image:</Form.Label>
+      <Form.Label htmlFor="item_name">Image URL:</Form.Label>
+      <Form.Control
+        type="text"
+        id="img_url"
+      />
+
+      {/* <Form.Label>Upload an image:</Form.Label>
       <InputGroup>
 <Form.Control type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
-</InputGroup>
+</InputGroup> */}
 <Button>Submit Item</Button>
     </Form>
     )
