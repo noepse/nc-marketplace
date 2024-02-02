@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 export default function ItemCard (props) {
     const {item} = props
     return (
-        <Card style={{ width: '10.5rem', padding: '10px '}}>
+        <Card style={{ width: '11rem', padding: '10px '}}>
           <Card.Img variant="top" src={item.img_url} />
           <Card.Body>
             <Card.Title>{item.item_name}</Card.Title>
