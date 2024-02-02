@@ -20,10 +20,23 @@ export const getItems = () => {
      .then((response) => {
        // handle success
        return response.data.categories
-   
      })
      .catch((error) => {
        // handle error
        console.log(error);
      })
+  }
+
+  export const postItemToSell = (item) => {
+    return axios
+    .post('https://nc-marketplace-sem-2.onrender.com/api/items', item)
+    .then((response) => {
+      // handle success
+      console.log(response)
+      return response
+    })
+    .catch((error) => {
+      // handle error
+      console.log(error);
+    })
   }
