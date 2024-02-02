@@ -6,7 +6,6 @@ export default function Home(props){
     return (<>
         <p>what are you looking for today?</p>
         <a href="./items"><Button>view all items</Button></a>
-        <Categories></Categories>
     </>
     )
 

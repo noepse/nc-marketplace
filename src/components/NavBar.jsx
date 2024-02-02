@@ -9,7 +9,7 @@ export default function NavBar() {
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="me-auto">
       <Nav.Link href="./">Home</Nav.Link>
-      <Nav.Link href="./">Sell</Nav.Link>
+      <Nav.Link href="./sell">Sell</Nav.Link>
       <Nav.Link href="./">Profile</Nav.Link>
       <Nav.Link href="./">Basket</Nav.Link>
     </Nav>

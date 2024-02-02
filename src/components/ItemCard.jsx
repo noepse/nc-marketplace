@@ -3,9 +3,8 @@ import Card from 'react-bootstrap/Card';
 
 export default function ItemCard (props) {
     const {item} = props
-    console.log(item)
     return (
-        <Card style={{ width: '18rem', padding: '0px '}}>
+        <Card style={{ width: '18rem', padding: '5px '}}>
           <Card.Img variant="top" src={item.img_url} />
           <Card.Body>
             <Card.Title>{item.item_name}</Card.Title>

@@ -1,24 +1,13 @@
 import CategoryCard from "../components/CategoryCard";
-import axios from 'axios';
+import { getCategories } from "../utils/api";
 import {useEffect, useState} from 'react';
 
-export default function Categories() {
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+
+export default function Categories(props) {
+  const {setItems} = props
 
   const [categories, setCategories] = useState([])
-
-    function getCategories () {
-     return axios
-  .get('https://nc-marketplace-sem-2.onrender.com/api/categories')
-  .then((response) => {
-    // handle success
-    return response.data.categories
-
-  })
-  .catch((error) => {
-    // handle error
-    console.log(error);
-  })
-    }
 
     useEffect(()=>{
       getCategories().then((data)=>{
@@ -27,11 +16,17 @@ export default function Categories() {
     }, [])
 
   return (
-    <ul>
-      <p>These are the categories</p>
+    <>
+      <h2>Browse By Category</h2>
+      <ButtonGroup aria-label="Basic example">
       {categories.map((category)=>{
-        return <CategoryCard key = {category.category_name} category={category}/>
+        return (
+
+
+            <CategoryCard key = {category.category_name} category={category} setItems = {setItems}/>
+        )
       })}
-    </ul>
+      </ButtonGroup>
+    </>
   );
 }
