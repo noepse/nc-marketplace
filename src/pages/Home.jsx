@@ -1,11 +1,11 @@
 import Button from 'react-bootstrap/Button';
-import Categories from './Categories';
+import Categories from '../components/Categories';
 
 export default function Home(props){
 
     return (<>
-        <p>what are you looking for today?</p>
-        <a href="./items"><Button>view all items</Button></a>
+        <p>What are you looking for today?</p>
+        <a href="./items"><Button>View all items</Button></a>
     </>
     )
 

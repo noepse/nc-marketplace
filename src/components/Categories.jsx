@@ -1,4 +1,4 @@
-import CategoryCard from "../components/CategoryCard";
+import CategoryCard from "./CategoryCard";
 import { getCategories } from "../utils/api";
 import {useEffect, useState} from 'react';
 
@@ -16,9 +16,8 @@ export default function Categories(props) {
     }, [])
 
   return (
-    <>
-      <h2>Browse By Category</h2>
-      <ButtonGroup aria-label="Basic example">
+    <section id = "categories">
+      <ButtonGroup >
       {categories.map((category)=>{
         return (
 
@@ -27,6 +26,6 @@ export default function Categories(props) {
         )
       })}
       </ButtonGroup>
-    </>
+    </section>
   );
 }

@@ -13,7 +13,6 @@ export default function Sell() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log("form submitted");
     postItemToSell(formInputs)
     .then(() => {
       console.log("form submitted")
@@ -22,7 +21,6 @@ export default function Sell() {
 
   function handleDropDown(event) {
     setFormInputs((currentForm) => {
-      console.log(event, "CLICK");
       return { ...currentForm, category_name: event.target.innerText };
     });
   }
@@ -39,18 +37,18 @@ export default function Sell() {
         }}
         type="text"
         id="item_name"
-      />
+      required />
       <DropdownButton
         id="dropdown-basic-button"
         title={formInputs.category_name}
       >
-        <Dropdown.Item onClick={handleDropDown} href="#/action-1">
+        <Dropdown.Item onClick={handleDropDown}>
           Electronics
         </Dropdown.Item>
-        <Dropdown.Item onClick={handleDropDown} href="#/action-2">
+        <Dropdown.Item onClick={handleDropDown}>
           Household
         </Dropdown.Item>
-        <Dropdown.Item onClick={handleDropDown} href="#/action-3">
+        <Dropdown.Item onClick={handleDropDown}>
           Clothing
         </Dropdown.Item>
       </DropdownButton>
@@ -78,7 +76,8 @@ export default function Sell() {
             });
           }}
           type="number"
-          aria-label="Amount (to the nearest dollar)"
+          aria-label="Amount (to the nearest pound)"
+          required
         />
         <InputGroup.Text>.00</InputGroup.Text>
       </InputGroup>
@@ -93,6 +92,7 @@ export default function Sell() {
         }}
         type="text"
         id="img_url"
+        required
       />
 
       {/* <Form.Label>Upload an image:</Form.Label>

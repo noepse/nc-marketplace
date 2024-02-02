@@ -6,9 +6,35 @@
 
 }
 
-/* *{
-  border: 1px solid red;
-} */
+#items>h2{
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+#itemsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1em;
+}
+
+#categories{
+  margin-top: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  #root {
+    width: 80%;
+    max-width: 800px;
+  }
+
+}
+
+*{
+  border: 0px solid red;
+}
 
 .logo {
   height: 6em;

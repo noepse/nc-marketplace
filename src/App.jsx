@@ -27,6 +27,7 @@ useEffect(()=>{
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/items" element={<Items items = {items} setItems = {setItems}/>} />
+      <Route path="/items/:category_name" element={<Items items = {items} setItems = {setItems}/>} />
       <Route path="/sell" element={<Sell/>} />
     </Routes>
     </>
