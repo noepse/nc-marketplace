@@ -28,14 +28,10 @@
   margin-top: 1em;
 }
 
-#home{
-  width: 100%;
-}
-
 @media only screen and (min-width: 600px) {
   #root {
     width: 80%;
-    max-width: 800px;
+    max-width: 630px;
   }
 
 }

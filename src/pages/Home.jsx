@@ -5,7 +5,7 @@ import CarouselImage from '../components/CarouselImage.jsx';
 export default function Home(props){
 
     return (
-    <section id="home">
+    <>
     <p></p>
         <Carousel>
       <Carousel.Item>
@@ -31,7 +31,7 @@ export default function Home(props){
       </Carousel.Item>
     </Carousel>
 
-    </section>
+    </>
     )
 
 }
