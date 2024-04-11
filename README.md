@@ -1,8 +1,21 @@
-# React + Vite
+## nc-market 🛒
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An online marketplace using Northcoders' marketplace API.
 
-Currently, two official plugins are available:
+View website [here](https://nc-market.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### future features (NB: 🚧 site is still under development)
+- Search functionality
+- View item details
+- Purchase item and view basket
+- Login functionality
+
+### contact
+
+Feel free to reach out via any of the routes below.
+
+- Fill out this [online form](https://simranamin.com/#contact)
+- Connect with me on [LinkedIn](https://www.linkedin.com/in/simran-amin/)
+
+### credits
+- Developed in collaboration with Hannah Tinsley McRink [gitHub](https://github.com/HannahTinsleyMcRink)
